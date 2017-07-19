@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3DB197DC1F1F386C00626B68 /* SwiftScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB197DA1F1F386C00626B68 /* SwiftScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DB197E31F1F38BB00626B68 /* SwiftScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB197E21F1F38BB00626B68 /* SwiftScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DB197D71F1F386C00626B68 /* SwiftScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB197DA1F1F386C00626B68 /* SwiftScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScrollView.h; sourceTree = "<group>"; };
 		3DB197DB1F1F386C00626B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB197E21F1F38BB00626B68 /* SwiftScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				3DB197DA1F1F386C00626B68 /* SwiftScrollView.h */,
 				3DB197DB1F1F386C00626B68 /* Info.plist */,
+				3DB197E21F1F38BB00626B68 /* SwiftScrollView.swift */,
 			);
 			path = SwiftScrollView;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					3DB197D61F1F386C00626B68 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB197E31F1F38BB00626B68 /* SwiftScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,17 +244,23 @@
 		3DB197E01F1F386C00626B68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftScrollView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rajamohan-s.SwiftScrollView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,13 +268,18 @@
 		3DB197E11F1F386C00626B68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftScrollView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rajamohan-s.SwiftScrollView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
