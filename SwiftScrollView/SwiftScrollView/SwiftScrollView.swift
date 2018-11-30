@@ -6,6 +6,8 @@
 //  Copyright © 2018 Rajamohan-S. All rights reserved.
 //
 
+import UIKit
+
 open class SwiftScrollView:UIScrollView,UITextFieldDelegate,UITextViewDelegate{
     
     private var notification = NotificationCenter.default

@@ -12,7 +12,40 @@
 		1843E5E021B1AF710008AFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5DE21B1AF710008AFD6 /* Main.storyboard */; };
 		1843E5E221B1AF720008AFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E121B1AF720008AFD6 /* Assets.xcassets */; };
 		1843E5E521B1AF720008AFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E321B1AF720008AFD6 /* LaunchScreen.storyboard */; };
+		1843E5F221B1B42F0008AFD6 /* SwiftScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843E5F121B1B4220008AFD6 /* SwiftScrollView.framework */; };
+		1843E5F321B1B42F0008AFD6 /* SwiftScrollView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1843E5F121B1B4220008AFD6 /* SwiftScrollView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1843E5F021B1B4220008AFD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1843E5EC21B1B4220008AFD6 /* SwiftScrollView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1843E5C121B1A94F0008AFD6;
+			remoteInfo = SwiftScrollView;
+		};
+		1843E5F421B1B42F0008AFD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1843E5EC21B1B4220008AFD6 /* SwiftScrollView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1843E5C021B1A94F0008AFD6;
+			remoteInfo = SwiftScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1843E5F621B1B42F0008AFD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1843E5F321B1B42F0008AFD6 /* SwiftScrollView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1843E5D721B1AF710008AFD6 /* SwiftScrollViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftScrollViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +55,7 @@
 		1843E5E121B1AF720008AFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1843E5E421B1AF720008AFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1843E5E621B1AF720008AFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1843E5EC21B1B4220008AFD6 /* SwiftScrollView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftScrollView.xcodeproj; path = ../SwiftScrollView/SwiftScrollView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1843E5F221B1B42F0008AFD6 /* SwiftScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +73,7 @@
 		1843E5CE21B1AF710008AFD6 = {
 			isa = PBXGroup;
 			children = (
+				1843E5EC21B1B4220008AFD6 /* SwiftScrollView.xcodeproj */,
 				1843E5D921B1AF710008AFD6 /* SwiftScrollViewExample */,
 				1843E5D821B1AF710008AFD6 /* Products */,
 			);
@@ -64,6 +100,14 @@
 			path = SwiftScrollViewExample;
 			sourceTree = "<group>";
 		};
+		1843E5ED21B1B4220008AFD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1843E5F121B1B4220008AFD6 /* SwiftScrollView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +118,12 @@
 				1843E5D321B1AF710008AFD6 /* Sources */,
 				1843E5D421B1AF710008AFD6 /* Frameworks */,
 				1843E5D521B1AF710008AFD6 /* Resources */,
+				1843E5F621B1B42F0008AFD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1843E5F521B1B42F0008AFD6 /* PBXTargetDependency */,
 			);
 			name = SwiftScrollViewExample;
 			productName = SwiftScrollViewExample;
@@ -110,12 +156,28 @@
 			mainGroup = 1843E5CE21B1AF710008AFD6;
 			productRefGroup = 1843E5D821B1AF710008AFD6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1843E5ED21B1B4220008AFD6 /* Products */;
+					ProjectRef = 1843E5EC21B1B4220008AFD6 /* SwiftScrollView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1843E5D621B1AF710008AFD6 /* SwiftScrollViewExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1843E5F121B1B4220008AFD6 /* SwiftScrollView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftScrollView.framework;
+			remoteRef = 1843E5F021B1B4220008AFD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1843E5D521B1AF710008AFD6 /* Resources */ = {
@@ -141,6 +203,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1843E5F521B1B42F0008AFD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftScrollView;
+			targetProxy = 1843E5F421B1B42F0008AFD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1843E5DE21B1AF710008AFD6 /* Main.storyboard */ = {
@@ -281,6 +351,7 @@
 		1843E5EA21B1AF720008AFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftScrollViewExample/Info.plist;
@@ -298,6 +369,7 @@
 		1843E5EB21B1AF720008AFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftScrollViewExample/Info.plist;

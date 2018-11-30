@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1843E5C621B1A94F0008AFD6 /* SwiftScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1843E5C421B1A94F0008AFD6 /* SwiftScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1843E5CD21B1AB7A0008AFD6 /* SwiftScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1843E5C121B1A94F0008AFD6 /* SwiftScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1843E5C421B1A94F0008AFD6 /* SwiftScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScrollView.h; sourceTree = "<group>"; };
 		1843E5C521B1A94F0008AFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +46,6 @@
 		1843E5C321B1A94F0008AFD6 /* SwiftScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				1843E5C421B1A94F0008AFD6 /* SwiftScrollView.h */,
 				1843E5C521B1A94F0008AFD6 /* Info.plist */,
 				1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */,
 			);
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1843E5C621B1A94F0008AFD6 /* SwiftScrollView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
