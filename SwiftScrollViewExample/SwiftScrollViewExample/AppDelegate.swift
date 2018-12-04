@@ -2,11 +2,14 @@
 //  AppDelegate.swift
 //  SwiftScrollViewExample
 //
-//  Created by Apple on 30/11/18.
-//  Copyright © 2018 Rajamohan-S. All rights reserved.
+//  Created by Rajamohan S, Independent Software Developer on 30/11/18.
+//  Copyright (c) 2018 Rajamohan S. All rights reserved.
+//
+//  See https://rajamohan-s.github.io/ for author information.
 //
 
 import UIKit
+import SwiftScrollViews
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

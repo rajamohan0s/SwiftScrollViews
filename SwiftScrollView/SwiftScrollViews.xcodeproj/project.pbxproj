@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1843E5CD21B1AB7A0008AFD6 /* SwiftScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */; };
+		18D9F98821B3AD1700839757 /* SwiftScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98721B3AD1700839757 /* SwiftScrollViews.swift */; };
+		18D9F98C21B3C82C00839757 /* SwiftScrollViewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98921B3C82C00839757 /* SwiftScrollViewsExtensions.swift */; };
+		18D9F98D21B3C82C00839757 /* SwiftTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98A21B3C82C00839757 /* SwiftTableView.swift */; };
+		18D9F98E21B3C82C00839757 /* SwiftCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98B21B3C82C00839757 /* SwiftCollectionView.swift */; };
+		18FBBA9C21B37C5300840A0C /* SwiftScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FBBA9B21B37C5300840A0C /* SwiftScrollViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1843E5C121B1A94F0008AFD6 /* SwiftScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843E5C121B1A94F0008AFD6 /* SwiftScrollViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScrollViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1843E5C521B1A94F0008AFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScrollView.swift; sourceTree = "<group>"; };
+		18D9F98721B3AD1700839757 /* SwiftScrollViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScrollViews.swift; sourceTree = "<group>"; };
+		18D9F98921B3C82C00839757 /* SwiftScrollViewsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScrollViewsExtensions.swift; sourceTree = "<group>"; };
+		18D9F98A21B3C82C00839757 /* SwiftTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTableView.swift; sourceTree = "<group>"; };
+		18D9F98B21B3C82C00839757 /* SwiftCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCollectionView.swift; sourceTree = "<group>"; };
+		18FBBA9B21B37C5300840A0C /* SwiftScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScrollViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +40,7 @@
 		1843E5B721B1A94F0008AFD6 = {
 			isa = PBXGroup;
 			children = (
-				1843E5C321B1A94F0008AFD6 /* SwiftScrollView */,
+				1843E5C321B1A94F0008AFD6 /* SwiftScrollViews */,
 				1843E5C221B1A94F0008AFD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -38,18 +48,23 @@
 		1843E5C221B1A94F0008AFD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1843E5C121B1A94F0008AFD6 /* SwiftScrollView.framework */,
+				1843E5C121B1A94F0008AFD6 /* SwiftScrollViews.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1843E5C321B1A94F0008AFD6 /* SwiftScrollView */ = {
+		1843E5C321B1A94F0008AFD6 /* SwiftScrollViews */ = {
 			isa = PBXGroup;
 			children = (
 				1843E5C521B1A94F0008AFD6 /* Info.plist */,
+				18D9F98721B3AD1700839757 /* SwiftScrollViews.swift */,
 				1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */,
+				18D9F98A21B3C82C00839757 /* SwiftTableView.swift */,
+				18D9F98B21B3C82C00839757 /* SwiftCollectionView.swift */,
+				18FBBA9B21B37C5300840A0C /* SwiftScrollViewDelegate.swift */,
+				18D9F98921B3C82C00839757 /* SwiftScrollViewsExtensions.swift */,
 			);
-			path = SwiftScrollView;
+			path = SwiftScrollViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +80,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1843E5C021B1A94F0008AFD6 /* SwiftScrollView */ = {
+		1843E5C021B1A94F0008AFD6 /* SwiftScrollViews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1843E5C921B1A94F0008AFD6 /* Build configuration list for PBXNativeTarget "SwiftScrollView" */;
+			buildConfigurationList = 1843E5C921B1A94F0008AFD6 /* Build configuration list for PBXNativeTarget "SwiftScrollViews" */;
 			buildPhases = (
 				1843E5BC21B1A94F0008AFD6 /* Headers */,
 				1843E5BD21B1A94F0008AFD6 /* Sources */,
@@ -78,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftScrollView;
+			name = SwiftScrollViews;
 			productName = SwiftScrollView;
-			productReference = 1843E5C121B1A94F0008AFD6 /* SwiftScrollView.framework */;
+			productReference = 1843E5C121B1A94F0008AFD6 /* SwiftScrollViews.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1843E5BB21B1A94F0008AFD6 /* Build configuration list for PBXProject "SwiftScrollView" */;
+			buildConfigurationList = 1843E5BB21B1A94F0008AFD6 /* Build configuration list for PBXProject "SwiftScrollViews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1843E5C021B1A94F0008AFD6 /* SwiftScrollView */,
+				1843E5C021B1A94F0008AFD6 /* SwiftScrollViews */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D9F98E21B3C82C00839757 /* SwiftCollectionView.swift in Sources */,
+				18FBBA9C21B37C5300840A0C /* SwiftScrollViewDelegate.swift in Sources */,
+				18D9F98C21B3C82C00839757 /* SwiftScrollViewsExtensions.swift in Sources */,
+				18D9F98D21B3C82C00839757 /* SwiftTableView.swift in Sources */,
+				18D9F98821B3AD1700839757 /* SwiftScrollViews.swift in Sources */,
 				1843E5CD21B1AB7A0008AFD6 /* SwiftScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +289,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftScrollView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftScrollViews/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,7 +315,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftScrollView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftScrollViews/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1843E5BB21B1A94F0008AFD6 /* Build configuration list for PBXProject "SwiftScrollView" */ = {
+		1843E5BB21B1A94F0008AFD6 /* Build configuration list for PBXProject "SwiftScrollViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1843E5C721B1A94F0008AFD6 /* Debug */,
@@ -322,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1843E5C921B1A94F0008AFD6 /* Build configuration list for PBXNativeTarget "SwiftScrollView" */ = {
+		1843E5C921B1A94F0008AFD6 /* Build configuration list for PBXNativeTarget "SwiftScrollViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1843E5CA21B1A94F0008AFD6 /* Debug */,
