@@ -34,11 +34,11 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
     //Observe keyboard notifications
    internal func addNotifications(){
         
-        self.notification.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { (notification) in
+    self.notification.addObserver(forName:  UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { (notification) in
             self.observeKeyboard(notification, isShow:true)
         }
         
-        self.notification.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil) { (notification) in
+    self.notification.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil) { (notification) in
             self.observeKeyboard(notification, isShow:false)
         }
     }
