@@ -1,5 +1,5 @@
 # SwiftScrollViews
 
-Swift Code for Avoiding Keyboard on UIScrollView
+A simple approach to handle UITextField & UITextViews over scroll view accross keyboard.
 
 ![Demo](./images/demo.gif)

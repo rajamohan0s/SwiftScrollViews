@@ -11,24 +11,15 @@
 		1843E5DD21B1AF710008AFD6 /* ScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E5DC21B1AF710008AFD6 /* ScrollViewExample.swift */; };
 		1843E5E221B1AF720008AFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E121B1AF720008AFD6 /* Assets.xcassets */; };
 		1843E5E521B1AF720008AFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E321B1AF720008AFD6 /* LaunchScreen.storyboard */; };
-		18D9F99021B3C88800839757 /* SwiftScrollViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D9F98121B3ACA400839757 /* SwiftScrollViews.framework */; };
-		18D9F99121B3C88800839757 /* SwiftScrollViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18D9F98121B3ACA400839757 /* SwiftScrollViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D9F99721B3C8B700839757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D9F99521B3C8B700839757 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18D9F98021B3ACA400839757 /* PBXContainerItemProxy */ = {
+		1839E40F21B628320049E45A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1843E5EC21B1B4220008AFD6 /* SwiftScrollViews.xcodeproj */;
+			containerPortal = 1839E40B21B628320049E45A /* SwiftScrollViews.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1843E5C121B1A94F0008AFD6;
-			remoteInfo = SwiftScrollViews;
-		};
-		18D9F99221B3C88800839757 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1843E5EC21B1B4220008AFD6 /* SwiftScrollViews.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1843E5C021B1A94F0008AFD6;
 			remoteInfo = SwiftScrollViews;
 		};
 /* End PBXContainerItemProxy section */
@@ -40,7 +31,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18D9F99121B3C88800839757 /* SwiftScrollViews.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,13 +38,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1839E40B21B628320049E45A /* SwiftScrollViews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftScrollViews.xcodeproj; path = ../SwiftScrollViews/SwiftScrollViews.xcodeproj; sourceTree = "<group>"; };
 		1843E5D721B1AF710008AFD6 /* SwiftScrollViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftScrollViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1843E5DA21B1AF710008AFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1843E5DC21B1AF710008AFD6 /* ScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExample.swift; sourceTree = "<group>"; };
 		1843E5E121B1AF720008AFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1843E5E421B1AF720008AFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1843E5E621B1AF720008AFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1843E5EC21B1B4220008AFD6 /* SwiftScrollViews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftScrollViews.xcodeproj; path = ../SwiftScrollView/SwiftScrollViews.xcodeproj; sourceTree = "<group>"; };
 		18D9F97121B3ABC900839757 /* SwiftScrollViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftScrollViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D9F99621B3C8B700839757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,17 +54,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D9F99021B3C88800839757 /* SwiftScrollViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1839E40C21B628320049E45A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1839E41021B628320049E45A /* SwiftScrollViews.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1843E5CE21B1AF710008AFD6 = {
 			isa = PBXGroup;
 			children = (
-				1843E5EC21B1B4220008AFD6 /* SwiftScrollViews.xcodeproj */,
+				1839E40B21B628320049E45A /* SwiftScrollViews.xcodeproj */,
 				1843E5D921B1AF710008AFD6 /* SwiftScrollViewExample */,
 				1843E5D821B1AF710008AFD6 /* Products */,
 				18D9F97021B3ABC900839757 /* Frameworks */,
@@ -110,14 +107,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		18D9F97D21B3ACA400839757 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18D9F98121B3ACA400839757 /* SwiftScrollViews.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,7 +122,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				18D9F99321B3C88800839757 /* PBXTargetDependency */,
 			);
 			name = SwiftScrollViewExample;
 			productName = SwiftScrollViewExample;
@@ -168,8 +156,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 18D9F97D21B3ACA400839757 /* Products */;
-					ProjectRef = 1843E5EC21B1B4220008AFD6 /* SwiftScrollViews.xcodeproj */;
+					ProductGroup = 1839E40C21B628320049E45A /* Products */;
+					ProjectRef = 1839E40B21B628320049E45A /* SwiftScrollViews.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -180,11 +168,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		18D9F98121B3ACA400839757 /* SwiftScrollViews.framework */ = {
+		1839E41021B628320049E45A /* SwiftScrollViews.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftScrollViews.framework;
-			remoteRef = 18D9F98021B3ACA400839757 /* PBXContainerItemProxy */;
+			remoteRef = 1839E40F21B628320049E45A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -213,14 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18D9F99321B3C88800839757 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftScrollViews;
-			targetProxy = 18D9F99221B3C88800839757 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1843E5E321B1AF720008AFD6 /* LaunchScreen.storyboard */ = {
