@@ -11,7 +11,7 @@ A simple approach to handle UITextField & UITextViews over scroll view accross k
 ## Installation
 
 ### Using Cocoapods
-#### Swift 4.2
+#### Swift 4.2.1
 ```ruby
 pod 'SwiftScrollViews', '~>0.0.2'
 ```
