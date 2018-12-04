@@ -3,8 +3,8 @@
 </p>
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard.
 
-<p align="center">
-  <img src="./images/demo.gif">
+<p align="left">
+  <img width = 400 heaight = 400 src="./images/demo.gif">
 </p>
 
 ## Installation
