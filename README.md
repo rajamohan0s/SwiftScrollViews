@@ -4,7 +4,7 @@
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard.
 
 <p align="left">
-  <img width = "300" height = "600" src="./images/demo.gif">
+  <img width = "300" height = "550" src="./images/demo.gif">
 </p>
 
 ## Installation
