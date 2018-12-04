@@ -1,10 +1,11 @@
 <p align="center">
   <img src="https://rajamohan-s.github.io/resources/repo_Swift_ScrollViews/logo.png">
 </p>
+<p>
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard.
-
+</p>
 <p align="left">
-  <img width = "300" height = "550" src="./images/demo.gif">
+  <img width = "300" height = "500" src="./images/demo.gif">
 </p>
 
 ## Installation
