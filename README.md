@@ -1,5 +1,5 @@
 <p align="center">
-  <img width = "400" height = "100" src="https://raw.githubusercontent.com/RAJAMOHAN-S/rajamohan-s.github.io/master/resources/repo_swift_scrollviews/logoimage.png">
+  <img width = "400" height = "200" src="https://raw.githubusercontent.com/RAJAMOHAN-S/rajamohan-s.github.io/master/resources/repo_swift_scrollviews/logoimage.png">
 </p>
 <p>
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard.
