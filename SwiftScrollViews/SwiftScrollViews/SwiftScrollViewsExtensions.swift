@@ -10,6 +10,9 @@
 
 import UIKit
 
+//MARK:- Keyboard Size
+fileprivate var keyboardHeight:CGFloat = 0
+
 //MARK:- Variable for kAssociationKeyNextField
 private var kAssociationKeyNextField: UInt8 = 0
 
@@ -43,6 +46,7 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
         }
     }
     
+    
     //Remove observers of keyboard notifications
     fileprivate func removeNotifications(){
         
@@ -59,7 +63,8 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
 
         if isShow{
             let tabBarHeight = self.viewController?.tabBarController?.tabBar.frame.size.height ?? 0
-            self.contentInset.bottom = (keyboardSize.height+SwiftScrollViews.config.textComponentSpaceFromKeyboard)-tabBarHeight
+            self.contentInset.bottom = keyboardSize.height-tabBarHeight
+            keyboardHeight  = keyboardSize.height
             self.scrollIndicatorInsets = contentInset
         }else{
             self.contentInset.bottom = 0
@@ -139,15 +144,42 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
     internal func shouldReturn(for textField: UITextField,with delegate:SwiftScrollViewDelegate?) -> Bool{
         
         if let nextComponent = textField.nextTextComponent,textField.returnKeyType == .next{
-            
             nextComponent.becomeFirstResponder()
+            self.setContentForTextComponent()
         }else{
             
             delegate?.didEditingDone(for: textField)
             textField.resignFirstResponder()
         }
-        
         return true
+    }
+    
+    private func setContentForTextComponent(){
+        
+        if let nextComponent = self.firstResponder{
+            let point = nextComponent.superview!.convert(nextComponent.frame, to: nextComponent.window!).origin
+            
+            var fontSize:CGFloat = 0
+            
+            if let textField = nextComponent.textField{
+                
+                fontSize = textField.font?.pointSize ?? 0
+            }else if let textView = nextComponent.textView{
+                
+                fontSize = textView.font?.pointSize ?? 0
+            }
+            
+            let visibleHeight  = self.viewController!.view.frame.height-keyboardHeight-fontSize
+            
+            if point.y >= visibleHeight{
+                
+                if nextComponent is UITextView{
+                    
+                    self.setContentOffset(CGPoint(x: self.contentOffset.x, y: self.contentOffset.y+fontSize+SwiftScrollViews.config.textComponentSpaceFromKeyboard), animated: true)
+                }
+                //TODO:- Implementation for UITextField
+            }
+        }
     }
 }
 

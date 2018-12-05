@@ -11,6 +11,7 @@
 		1843E5DD21B1AF710008AFD6 /* ScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E5DC21B1AF710008AFD6 /* ScrollViewExample.swift */; };
 		1843E5E221B1AF720008AFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E121B1AF720008AFD6 /* Assets.xcassets */; };
 		1843E5E521B1AF720008AFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E321B1AF720008AFD6 /* LaunchScreen.storyboard */; };
+		18C2BA5821B6F7E20006D5F6 /* SwiftScrollViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1839E41021B628320049E45A /* SwiftScrollViews.framework */; };
 		18D9F99721B3C8B700839757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D9F99521B3C8B700839757 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C2BA5821B6F7E20006D5F6 /* SwiftScrollViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
