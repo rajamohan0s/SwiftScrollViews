@@ -63,7 +63,7 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
 
         if isShow{
             let tabBarHeight = self.viewController?.tabBarController?.tabBar.frame.size.height ?? 0
-            self.contentInset.bottom = keyboardSize.height-tabBarHeight
+            self.contentInset.bottom = (keyboardSize.height+SwiftScrollViews.config.textComponentSpaceFromKeyboard)-tabBarHeight
             keyboardHeight  = keyboardSize.height
             self.scrollIndicatorInsets = contentInset
         }else{
@@ -145,7 +145,10 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
         
         if let nextComponent = textField.nextTextComponent,textField.returnKeyType == .next{
             nextComponent.becomeFirstResponder()
-            self.setContentForTextComponent()
+            
+            if nextComponent is UITextView{
+                self.setContentForTextComponent()
+            }
         }else{
             
             delegate?.didEditingDone(for: textField)
@@ -171,13 +174,9 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
             
             let visibleHeight  = self.viewController!.view.frame.height-keyboardHeight-fontSize
             
-            if point.y >= visibleHeight{
+            if (point.y+fontSize) >= visibleHeight{
                 
-                if nextComponent is UITextView{
-                    
-                    self.setContentOffset(CGPoint(x: self.contentOffset.x, y: self.contentOffset.y+fontSize+SwiftScrollViews.config.textComponentSpaceFromKeyboard), animated: true)
-                }
-                //TODO:- Implementation for UITextField
+                self.setContentOffset(CGPoint(x: self.contentOffset.x, y: self.contentOffset.y+fontSize+SwiftScrollViews.config.textComponentSpaceFromKeyboard), animated: true)
             }
         }
     }
