@@ -2,8 +2,10 @@
 //  ViewController.swift
 //  SwiftScrollViewExample
 //
-//  Created by Apple on 30/11/18.
-//  Copyright © 2018 Rajamohan-S. All rights reserved.
+//  Created by Rajamohan S, Independent Software Developer on 30/11/18.
+//  Copyright (c) 2018 Rajamohan S. All rights reserved.
+//
+//  See https://rajamohan-s.github.io/ for author information.
 //
 
 import UIKit
@@ -19,9 +21,10 @@ class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
     
     func didEditingDone(for textField: UITextField) {
         
-        print("Ended editing:\(String(describing: textField.placeholder))")
+        let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Nil", message: "✅ Editing Done!", preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
+        self.present(controller, animated: true, completion: nil)
     }
 
-    
 }
 
