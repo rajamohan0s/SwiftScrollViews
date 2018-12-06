@@ -33,7 +33,24 @@ pod 'SwiftScrollViews', '~>1.0' # Swift 4.2.1
    2. Go to **Assistand Editor/Identity Inspector/Custom Class/Class** as `SwiftScrollView`. If you have `UITableView` then use `SwiftTableView` and then `SwiftCollectionView` for `UICollectionView`.
 
 ##### SwiftScrollViewDelegate
-      It is delegating the method 
+      It is delegating the method `func didEditingDone(for textField: UITextField) {}` to get **Done** action over `UITextField`.
+      
+      Example:
       ``` swift
-      func didEditingDone(for textField: UITextField) {}
-      ``` to get **Done** action over `UITextField`.
+class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
+   
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+    
+    func didEditingDone(for textField: UITextField) {
+        
+        let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Nil", message: "✅ Editing Done!", preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
+        self.present(controller, animated: true, completion: nil)
+    }
+
+}
+```
