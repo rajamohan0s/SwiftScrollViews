@@ -56,3 +56,11 @@ class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
     }
 }
 ```
+## Contribute
+I would love you for the contribution to **SNet**, check the [LICENSE](https://github.com/RAJAMOHAN-S/SNet/blob/master/LICENSE.md) file for more info.
+
+## Meta
+
+Rajamohan S – (https://rajamohan-s.github.io/)
+
+Distributed under the MIT license. See [LICENSE](https://github.com/RAJAMOHAN-S/SwiftScrollViews/blob/master/LICENSE.md) for more information.
