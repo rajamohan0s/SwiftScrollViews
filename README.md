@@ -17,7 +17,7 @@ A simple approach to handle UITextField & UITextViews over scroll view accross k
 ### Using Cocoapods
 
 ```ruby
-pod 'SwiftScrollViews', '~>0.0.2' # Swift 4.2.1
+pod 'SwiftScrollViews', '~>1.0' # Swift 4.2.1
 ```
 
 #### Manually
@@ -27,5 +27,10 @@ pod 'SwiftScrollViews', '~>0.0.2' # Swift 4.2.1
 ## Usage
 
 #### With Interface Builder
+
+##### The Basic Setup
    1. Select scrollview in xib or storyboard in viewcontroller.
    2. Go to **Assistand Editor/Identity Inspector/Custom Class/Class** as `SwiftScrollView`. If you have `UITableView` then use `SwiftTableView` and then `SwiftCollectionView` for `UICollectionView`.
+
+##### SwiftScrollViewDelegate
+      It is delegating the method ``` swift func didEditingDone(for textField: UITextField) {}``` to get **Done** action over `UITextField`.
