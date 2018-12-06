@@ -36,7 +36,7 @@ pod 'SwiftScrollViews', '~>1.0' # Swift 4.2.1
 
 It is delegating the method `func didEditingDone(for textField: UITextField) {}` to get **Done** action over `UITextField`.
 
-Example:
+##### Example:
 ```swift
 class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
   
