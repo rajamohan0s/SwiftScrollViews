@@ -39,11 +39,13 @@ It is delegating the method `func didEditingDone(for textField: UITextField) {}`
 Example:
 ```swift
 class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
-   
-
+  
+    @IBOutlet weak var scrollView: SwiftScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.scrollView.swiftScrollViewsDelegate =  self
     }
     
     func didEditingDone(for textField: UITextField) {
@@ -52,6 +54,5 @@ class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
         controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
         self.present(controller, animated: true, completion: nil)
     }
-
 }
 ```
