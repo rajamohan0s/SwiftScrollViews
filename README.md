@@ -33,7 +33,10 @@ pod 'SwiftScrollViews', '~>1.0' # Swift 4.2.1
 
 ### SwiftScrollViewDelegate
 
-It is delegating the method ```func didEditingDone(for textField: UITextField) {}``` to get **Done** action over ```UITextField```.
+It is delegating the method ```func didEditingDone(for textField: UITextField) {}``` is exceuted when **view did end editing**.
+
+ The view will end edit when directly taping the **ScrollViews** or Taping the keyboard return button if ` textField.returnKeyType != .default || textField.returnKeyType != .next`. **This way you can group the `UITextFields` in an view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next`.
+ 
 
 ### Example:
 ```swift
