@@ -7,7 +7,6 @@
 //
 //	See https://rajamohan-s.github.io/ for author information.
 //
- 
 
 import UIKit
 import SwiftScrollViews
