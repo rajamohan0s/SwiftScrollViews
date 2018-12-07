@@ -4,7 +4,7 @@
 <p>
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard. The SwiftScrollViews framework is written with the extension UIScrollView.
 </p>
-<p align="left">
+<p align="center">
   <img width = "250" height = "485" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftScrollView.gif">
   <img width = "250" height = "485" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftTableView.gif">
   <img width = "250" height = "485" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftCollectionView.gif">
