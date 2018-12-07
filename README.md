@@ -12,7 +12,7 @@ A simple approach to handle UITextField & UITextViews over scroll view accross k
 
 - Auto scroll for actvie `UITextFied` and `UITextView` over `UIScrollView`, `UITableView` and `UICollectionView`.
 - Set grouping by using `ReturnKeyType` of `UITextField`.
-- Execute action when textField did end editing if need by using `SwiftScrollViewDelegate`. (Refer `SwiftScrollViewExample` project).
+- Execute action when last `UITextField` of the group did end editing if need by using `SwiftScrollViewDelegate`. (Refer `SwiftScrollViewExample` project).
 - Set custom `ReturnKeyType` and vertical space between keyboard and active `UITextField` or `UITextView`.
 
 ## Requirements
@@ -47,6 +47,13 @@ It is delegating the method ```func didEditingDone(for textField: UITextField) {
  ### Grouping
  
   The group of `UITextFields` in a view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next` at last field of that group.
+
+### Aditional Configuration 
+
+```swift
+SwiftScrollViews.config.textComponentSpaceFromKeyboard = 40 //vertical space between keyboard and active text field or text view.
+SwiftScrollViews.config.defaultDoneKey = .done // The default return key of last text field over the scroll view.
+```
 
 ### Example:
 ```swift
