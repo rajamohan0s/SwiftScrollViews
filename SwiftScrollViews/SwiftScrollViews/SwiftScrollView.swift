@@ -13,7 +13,7 @@ import UIKit
 open class SwiftScrollView:UIScrollView,TextComponentDelegate{
     
 
-    @IBOutlet var swiftScrollViewsDelegate:SwiftScrollViewDelegate?
+    @IBOutlet public var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
     private var identifier:String{
         

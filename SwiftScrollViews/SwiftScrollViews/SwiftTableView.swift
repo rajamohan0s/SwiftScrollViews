@@ -13,16 +13,19 @@ import UIKit
 open class SwiftTableView:UITableView,TextComponentDelegate{
     
     private var textComponents = [UIView]()
-    open var swiftScrollViewDelegate:SwiftScrollViewDelegate?
+    
+    @IBOutlet public var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
     override public init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
+        self.keyboardDismissMode = .onDrag
         self.addNotifications()
 
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.keyboardDismissMode = .onDrag
         self.addNotifications()
     }
     
@@ -33,7 +36,7 @@ open class SwiftTableView:UITableView,TextComponentDelegate{
    
     
     open func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return self.shouldReturn(for: textField, with: self.swiftScrollViewDelegate)
+        return self.shouldReturn(for: textField, with: self.swiftScrollViewsDelegate)
     }
     
     open func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {

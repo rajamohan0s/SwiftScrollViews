@@ -10,13 +10,14 @@
 
 import UIKit
 
-open class SwiftCollectionView:UITableView,TextComponentDelegate{
+open class SwiftCollectionView:UICollectionView,TextComponentDelegate{
   
     private var textComponents = [UIView]()
-    open var swiftScrollViewDelegate:SwiftScrollViewDelegate?
     
-    override public init(frame: CGRect, style: UITableView.Style) {
-        super.init(frame: frame, style: style)
+    @IBOutlet public var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
+    
+    override public init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+        super.init(frame: frame, collectionViewLayout: layout)
         self.addNotifications()
     }
     
@@ -33,7 +34,7 @@ open class SwiftCollectionView:UITableView,TextComponentDelegate{
     }
    
     open func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return self.shouldReturn(for: textField, with: self.swiftScrollViewDelegate)
+        return self.shouldReturn(for: textField, with: self.swiftScrollViewsDelegate)
         
     }
     

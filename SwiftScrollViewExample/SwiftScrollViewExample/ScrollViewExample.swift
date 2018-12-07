@@ -11,17 +11,20 @@
 import UIKit
 import SwiftScrollViews
 
-class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
-   
+class ScrollViewExample: UIViewController,SwiftScrollViewsDelegate {
+  
+    @IBOutlet weak var scrollView: SwiftScrollView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.scrollView.swiftScrollViewsDelegate =  self
     }
     
     func didEditingDone(for textField: UITextField) {
         
-        let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Nil", message: "✅ Editing Done!", preferredStyle: .alert)
+        let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Empty!", message: "✅ Editing Done!", preferredStyle: .alert)
         controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
         self.present(controller, animated: true, completion: nil)
     }

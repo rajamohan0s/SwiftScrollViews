@@ -1,5 +1,5 @@
 //
-//  SwiftScrollViewDelegate.swift
+//  SwiftScrollViewsDelegate.swift
 //  SwiftScrollView
 //
 //  Created by Rajamohan S, Independent Software Developer on 02/12/18.
@@ -10,7 +10,7 @@
 
 import UIKit
 
-@objc public protocol SwiftScrollViewDelegate{
+@objc public protocol SwiftScrollViewsDelegate{
     
     func didEditingDone(for textField:UITextField)
 }
