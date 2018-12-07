@@ -46,7 +46,7 @@ class SwiftTableViewExample: UIViewController,UITableViewDataSource,SwiftScrollV
         return ["Login","Client Register","Admin Register"][section]
     }
     func didEditingDone(for textField: UITextField) {
-        
+       
         let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Empty!", message: "✅ Editing Done!", preferredStyle: .alert)
         controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
         self.present(controller, animated: true, completion: nil)

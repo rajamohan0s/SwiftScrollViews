@@ -296,14 +296,15 @@ fileprivate extension Array where Element == UIView{
     
     mutating func sorted(){
         self.sort { (v1, v2) -> Bool in
-            if v1.window != nil && v2.window != nil{
-                if let p1 = v1.superview?.convert(v1.frame, to: v1.window!).origin{
-                    if let p2 = v2.superview?.convert(v2.frame, to: v2.window!).origin{
-                
-                        return (p1.x < p2.x && p1.y == p2.y) || p1.y < p2.y
-                    }
+
+            if let p1 = v1.superview?.convert(v1.frame, to: v1.window).origin{
+
+                if let p2 = v2.superview?.convert(v2.frame, to: v2.window).origin{
+            
+                    return (p1.x < p2.x && p1.y == p2.y) || p1.y < p2.y
                 }
             }
+            
             return false
         }
     }

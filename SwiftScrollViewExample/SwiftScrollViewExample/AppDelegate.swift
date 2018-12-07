@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        SwiftScrollViews.config.textComponentSpaceFromKeyboard = 40
+        SwiftScrollViews.config.defaultDoneKey = .continue
         return true
     }
 
