@@ -8,6 +8,13 @@ A simple approach to handle UITextField & UITextViews over scroll view accross k
   <img width = "300" height = "500" src="./images/demo.gif">
 </p>
 
+## Features
+
+- Auto scroll for actvie `UITextFied` and `UITextView` over `UIScrollView`, `UITableView` and `UICollectionView`.
+- Set grouping by using `ReturnKeyType` of `UITextField`.
+- Execute action when textField did end editing if need by using `SwiftScrollViewDelegate`. (Refer `SwiftScrollViewExample` project).
+- Set custom `ReturnKeyType` and vertical space between keyboard and active `UITextField` or `UITextView`.
+
 ## Requirements
 
 - iOS 8.0+
