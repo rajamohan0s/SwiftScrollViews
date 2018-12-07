@@ -39,7 +39,7 @@ It is delegating the method ```func didEditingDone(for textField: UITextField) {
  
  ### Grouping
  
-  **You can set group of `UITextFields` in an view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next` as last field of that group.**
+  The group of `UITextFields` in an view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next` at last field of that group.
  
 
 ### Example:
