@@ -39,8 +39,7 @@ It is delegating the method ```func didEditingDone(for textField: UITextField) {
  
  ### Grouping
  
-  The group of `UITextFields` in an view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next` at last field of that group.
- 
+  The group of `UITextFields` in a view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next` at last field of that group.
 
 ### Example:
 ```swift
@@ -55,7 +54,8 @@ class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
     }
     
     func didEditingDone(for textField: UITextField) {
-        
+          
+         //TODO:- Do further with by comparing textField with self.textField
         let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Nil", message: "✅ Editing Done!", preferredStyle: .alert)
         controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
         self.present(controller, animated: true, completion: nil)
