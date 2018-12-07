@@ -5,9 +5,9 @@
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard. The SwiftScrollViews framework is written with the extension UIScrollView.
 </p>
 <p align="left">
-  <img width = "300" height = "582" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftScrollView.gif">
-  <img width = "300" height = "582" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftTableView.gif">
-  <img width = "300" height = "582" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftCollectionView.gif">
+  <img width = "200" height = "388" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftScrollView.gif">
+  <img width = "200" height = "388" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftTableView.gif">
+  <img width = "200" height = "388" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftCollectionView.gif">
 </p>
 
 ## Features
