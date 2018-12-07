@@ -4,9 +4,19 @@
 <p>
 A simple approach to handle UITextField & UITextViews over scroll view accross keyboard. The SwiftScrollViews framework is written with the extension UIScrollView.
 </p>
-<p align="left">
-  <img width = "300" height = "500" src="./images/demo.gif">
+<p align="center">
+  <img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftScrollView.gif" alt="Swift Scroll View">
+ <img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftTableView.gif" alt="Swift Table View">
+  <img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftCollectionView.gif" alt="Swift Collection View">
 </p>
+
+## Features
+
+- Auto scroll for actvie `UITextFied` and `UITextView` over `UIScrollView`, `UITableView` and `UICollectionView`.
+- Set grouping by using `ReturnKeyType` of `UITextField`.
+- Execute action when last `UITextField` of the group did end editing if need by using `SwiftScrollViewDelegate`. (Refer `SwiftScrollViewExample` project).
+- Set custom `ReturnKeyType` and vertical space between keyboard and active `UITextField` or `UITextView`.
+
 ## Requirements
 
 - iOS 8.0+
@@ -20,23 +30,34 @@ A simple approach to handle UITextField & UITextViews over scroll view accross k
 pod 'SwiftScrollViews', '~>1.0' # Swift 4.2.1
 ```
 
-#### Manually
+### Manually
 1. Download and drop ```Source``` folder in your project.  
 2. Congratulations! 
 
 ## Usage
 
-#### With Interface Builder
-
-##### The Basic Setup
+### The Basic Setup
    1. Select scrollview in xib or storyboard in viewcontroller.
    2. Go to **Assistand Editor/Identity Inspector/Custom Class/Class** as `SwiftScrollView`. If you have `UITableView` then use `SwiftTableView` and then `SwiftCollectionView` for `UICollectionView`.
 
-##### SwiftScrollViewDelegate
+### SwiftScrollViewDelegate
 
-It is delegating the method `func didEditingDone(for textField: UITextField) {}` to get **Done** action over `UITextField`.
+It is delegating the method ```func didEditingDone(for textField: UITextField) {}``` will exceute when **view did end editing**.
 
-##### Example:
+ The view will end edit when directly taping the **ScrollViews** or Taping the keyboard return button if ` textField.returnKeyType != .default || textField.returnKeyType != .next`.
+ 
+ ### Grouping
+ 
+  The group of `UITextFields` in a view by setting `textField.returnKeyType != .default || textField.returnKeyType != .next` at last field of that group.
+
+### Aditional Configuration 
+
+```swift
+SwiftScrollViews.config.textComponentSpaceFromKeyboard = 40 //vertical space between keyboard and active text field or text view.
+SwiftScrollViews.config.defaultDoneKey = .done // The default return key of last text field over the scroll view.
+```
+
+### Example:
 ```swift
 class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
   
@@ -49,7 +70,8 @@ class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
     }
     
     func didEditingDone(for textField: UITextField) {
-        
+          
+         //TODO:- Do further with by comparing textField with self.textField
         let controller  = UIAlertController(title: textField.placeholder ?? "Place Holder Nil", message: "✅ Editing Done!", preferredStyle: .alert)
         controller.addAction(UIAlertAction(title: "👍", style: .default, handler: nil))
         self.present(controller, animated: true, completion: nil)
