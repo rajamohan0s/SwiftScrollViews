@@ -6,7 +6,7 @@ A simple approach to handle UITextField & UITextViews over scroll view accross k
 </p>
 <p align="center">
   <img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftScrollView.gif">
-  <tab><img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftTableView.gif"><tab>
+ <img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftTableView.gif">&emsp;
   <img width = "288" height = "558" src="https://rajamohan-s.github.io/swiftscrollviews/demo/SwiftCollectionView.gif">
 </p>
 
