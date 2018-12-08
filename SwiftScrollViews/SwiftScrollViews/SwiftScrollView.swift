@@ -15,11 +15,6 @@ open class SwiftScrollView:UIScrollView,TextComponentDelegate{
 
     @IBOutlet public var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
-    private var identifier:String{
-        
-        return self.restorationIdentifier ?? "Nil"
-    }
-    
     private var textComponents = [UIView]()
     
     public override init(frame: CGRect) {
