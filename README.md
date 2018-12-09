@@ -44,11 +44,11 @@ pod 'SwiftScrollViews', '~>1.1' # Swift 4.2.1
 
 It is delegating the method ```func didEditingDone(for textField: UITextField) {}``` will exceute when **view did end editing**.
 
- The view will end edit when directly taping the **ScrollViews** or Taping the keyboard return button if ` textField.returnKeyType != .default || textField.returnKeyType != .next`.
+ The view will end edit when directly taping the **ScrollViews** or Taping the keyboard return button if ` textField.returnKeyType != .default` and `textField.returnKeyType != .next`.
  
  ### Grouping
  
-  The group of `UITextFields` in a view by setting `textField.returnKeyType != .default && textField.returnKeyType != .next` at last field of that group.
+  The group of `UITextFields` in a view by setting `textField.returnKeyType != .default` and `textField.returnKeyType != .next` at last field of that group.
 
 ### Aditional Configuration 
 
