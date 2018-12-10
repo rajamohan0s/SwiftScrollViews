@@ -37,7 +37,7 @@ pod 'SwiftScrollViews', '~>1.1' # Swift 4.2.1
 ## Usage
 
 ### The Basic Setup
-   1. Select scrollview in xib or storyboard in viewcontroller.
+   1. Select scrollview in interface builder.
    2. Go to **Assistand Editor/Identity Inspector/Custom Class/Class** as `SwiftScrollView`. If you have `UITableView` then use `SwiftTableView` and then `SwiftCollectionView` for `UICollectionView`.
 
 ### SwiftScrollViewDelegate
