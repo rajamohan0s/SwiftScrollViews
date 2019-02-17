@@ -1,5 +1,5 @@
 //
-//  SwiftScrollViewsDelegate.swift
+//  SwiftScrollViewDelegate.swift
 //  SwiftScrollView
 //
 //  Created by Rajamohan S, Independent Software Developer on 02/12/18.

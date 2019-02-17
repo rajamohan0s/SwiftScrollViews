@@ -9,19 +9,13 @@
 import UIKit
 import SwiftScrollViews
 
-class ScrollViewExample: UIViewController,SwiftScrollViewDelegate {
-   
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+class ScrollViewExample: UIViewController,SwiftScrollViewsDelegate {
+    
     
     func didEditingDone(for textField: UITextField) {
         
         print("Ended editing:\(String(describing: textField.placeholder))")
     }
 
-    
 }
 

@@ -13,7 +13,7 @@ import UIKit
 open class SwiftScrollView:UIScrollView,TextComponentDelegate{
     
 
-    @IBOutlet var swiftScrollViewsDelegate:SwiftScrollViewDelegate?
+    @IBOutlet var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
     private var identifier:String{
         
@@ -38,13 +38,26 @@ open class SwiftScrollView:UIScrollView,TextComponentDelegate{
         self.delegateTextComponents(in: self, textComponents: &textComponents)
     }
     
+    //MARK:- UITextField
+    
     open func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return self.shouldReturn(for: textField, with: self.swiftScrollViewsDelegate)
+        
+        if self.swiftScrollViewsDelegate?.textFieldShouldReturn?(textField) != false{
+            self.shouldReturn(for: textField, with: self.swiftScrollViewsDelegate)
+            return true
+        }
+        return false
     }
     
     open func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        return self.shouldBegin(textField)
+        if self.swiftScrollViewsDelegate?.textFieldShouldBeginEditing?(textField) != false{
+            self.shouldBegin(textField)
+            return true
+        }
+        return false
     }
+
+   
   
 }

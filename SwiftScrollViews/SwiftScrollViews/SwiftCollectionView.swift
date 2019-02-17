@@ -13,7 +13,7 @@ import UIKit
 open class SwiftCollectionView:UITableView,TextComponentDelegate{
   
     private var textComponents = [UIView]()
-    open var swiftScrollViewDelegate:SwiftScrollViewDelegate?
+    open var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
     override public init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -33,12 +33,20 @@ open class SwiftCollectionView:UITableView,TextComponentDelegate{
     }
    
     open func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return self.shouldReturn(for: textField, with: self.swiftScrollViewDelegate)
         
+        if self.swiftScrollViewsDelegate?.textFieldShouldReturn?(textField) != false{
+            self.shouldReturn(for: textField, with: self.swiftScrollViewsDelegate)
+            return true
+        }
+        return false
     }
     
     open func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        return self.shouldBegin(textField)
+        if self.swiftScrollViewsDelegate?.textFieldShouldBeginEditing?(textField) != false{
+            self.shouldBegin(textField)
+            return true
+        }
+        return false
     }
 }

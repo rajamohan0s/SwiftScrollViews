@@ -134,14 +134,12 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
         }
     }
     
-    internal func shouldBegin(_ textField: UITextField) -> Bool{
+    internal func shouldBegin(_ textField: UITextField){
         
         textField.returnKeyType = textField.nextTextComponent == nil ? textField.returnKeyType == .default ? SwiftScrollViews.config.defaultDoneKey : textField.returnKeyType : textField.returnKeyType == .default ? .next : textField.returnKeyType
-        
-        return true
     }
     
-    internal func shouldReturn(for textField: UITextField,with delegate:SwiftScrollViewDelegate?) -> Bool{
+    internal func shouldReturn(for textField: UITextField,with delegate:SwiftScrollViewsDelegate?){
         
         if let nextComponent = textField.nextTextComponent,textField.returnKeyType == .next{
             nextComponent.becomeFirstResponder()
@@ -154,7 +152,6 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
             delegate?.didEditingDone(for: textField)
             textField.resignFirstResponder()
         }
-        return true
     }
     
     private func setContentForTextComponent(){
@@ -185,11 +182,12 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
 //MARK:- Extension of UIScrollView
 extension UIScrollView:SwiftScrollViewExtension{
 
-    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        
+        
         if self.isSwiftScrollView{
-           
+            
             if self.isKeyboardPresented{
                 self.firstResponder?.resignFirstResponder()
             }
