@@ -1,4 +1,3 @@
-
 ## Features
 
 - Auto scroll for actvie `UITextFied` and `UITextView` over `UIScrollView`, `UITableView` and `UICollectionView`.
