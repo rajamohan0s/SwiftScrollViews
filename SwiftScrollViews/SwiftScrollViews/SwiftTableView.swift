@@ -15,6 +15,7 @@ open class SwiftTableView:UITableView,TextComponentDelegate{
     private var textComponents = [UIView]()
     open var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
+    
     override public init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         self.addNotifications()

@@ -12,7 +12,7 @@
 		18D9F98C21B3C82C00839757 /* SwiftScrollViewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98921B3C82C00839757 /* SwiftScrollViewsExtensions.swift */; };
 		18D9F98D21B3C82C00839757 /* SwiftTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98A21B3C82C00839757 /* SwiftTableView.swift */; };
 		18D9F98E21B3C82C00839757 /* SwiftCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F98B21B3C82C00839757 /* SwiftCollectionView.swift */; };
-		18FBBA9C21B37C5300840A0C /* SwiftScrollViewsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FBBA9B21B37C5300840A0C /* SwiftScrollViewsDelegate.swift */; };
+		18EA977123094FC900670B9A /* SwiftScrollViewsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA977023094FC900670B9A /* SwiftScrollViewsDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		18D9F98921B3C82C00839757 /* SwiftScrollViewsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScrollViewsExtensions.swift; sourceTree = "<group>"; };
 		18D9F98A21B3C82C00839757 /* SwiftTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTableView.swift; sourceTree = "<group>"; };
 		18D9F98B21B3C82C00839757 /* SwiftCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCollectionView.swift; sourceTree = "<group>"; };
-		18FBBA9B21B37C5300840A0C /* SwiftScrollViewsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScrollViewsDelegate.swift; sourceTree = "<group>"; };
+		18EA977023094FC900670B9A /* SwiftScrollViewsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScrollViewsDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				1843E5CC21B1AB7A0008AFD6 /* SwiftScrollView.swift */,
 				18D9F98A21B3C82C00839757 /* SwiftTableView.swift */,
 				18D9F98B21B3C82C00839757 /* SwiftCollectionView.swift */,
-				18FBBA9B21B37C5300840A0C /* SwiftScrollViewsDelegate.swift */,
+				18EA977023094FC900670B9A /* SwiftScrollViewsDelegate.swift */,
 				18D9F98921B3C82C00839757 /* SwiftScrollViewsExtensions.swift */,
 			);
 			path = SwiftScrollViews;
@@ -119,6 +119,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1843E5B721B1A94F0008AFD6;
 			productRefGroup = 1843E5C221B1A94F0008AFD6 /* Products */;
@@ -145,8 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA977123094FC900670B9A /* SwiftScrollViewsDelegate.swift in Sources */,
 				18D9F98E21B3C82C00839757 /* SwiftCollectionView.swift in Sources */,
-				18FBBA9C21B37C5300840A0C /* SwiftScrollViewsDelegate.swift in Sources */,
 				18D9F98C21B3C82C00839757 /* SwiftScrollViewsExtensions.swift in Sources */,
 				18D9F98D21B3C82C00839757 /* SwiftTableView.swift in Sources */,
 				18D9F98821B3AD1700839757 /* SwiftScrollViews.swift in Sources */,

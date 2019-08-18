@@ -10,14 +10,14 @@
 
 import UIKit
 
-open class SwiftCollectionView:UITableView,TextComponentDelegate{
+open class SwiftCollectionView:UICollectionView,TextComponentDelegate{
   
     private var textComponents = [UIView]()
     open var swiftScrollViewsDelegate:SwiftScrollViewsDelegate?
     
-    override public init(frame: CGRect, style: UITableView.Style) {
-        super.init(frame: frame, style: style)
-        self.addNotifications()
+    override public init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+        super.init(frame: frame, collectionViewLayout: layout)
+          self.addNotifications()
     }
     
     required public init?(coder aDecoder: NSCoder) {

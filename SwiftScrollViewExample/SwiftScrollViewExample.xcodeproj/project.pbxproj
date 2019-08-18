@@ -12,8 +12,8 @@
 		1843E5E221B1AF720008AFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E121B1AF720008AFD6 /* Assets.xcassets */; };
 		1843E5E521B1AF720008AFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843E5E321B1AF720008AFD6 /* LaunchScreen.storyboard */; };
 		18D9F99721B3C8B700839757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D9F99521B3C8B700839757 /* Main.storyboard */; };
-		18E60B5921B7F66B00F54A8E /* SwiftScrollViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1839E41021B628320049E45A /* SwiftScrollViews.framework */; };
-		18E60B5A21B7F66B00F54A8E /* SwiftScrollViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1839E41021B628320049E45A /* SwiftScrollViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18EA977423094FED00670B9A /* SwiftScrollViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1839E41021B628320049E45A /* SwiftScrollViews.framework */; };
+		18EA977523094FED00670B9A /* SwiftScrollViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1839E41021B628320049E45A /* SwiftScrollViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +24,7 @@
 			remoteGlobalIDString = 1843E5C121B1A94F0008AFD6;
 			remoteInfo = SwiftScrollViews;
 		};
-		18E60B5B21B7F66B00F54A8E /* PBXContainerItemProxy */ = {
+		18EA977623094FED00670B9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1839E40B21B628320049E45A /* SwiftScrollViews.xcodeproj */;
 			proxyType = 1;
@@ -34,13 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		18D9F99421B3C88800839757 /* Embed Frameworks */ = {
+		18EA977823094FED00670B9A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18E60B5A21B7F66B00F54A8E /* SwiftScrollViews.framework in Embed Frameworks */,
+				18EA977523094FED00670B9A /* SwiftScrollViews.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E60B5921B7F66B00F54A8E /* SwiftScrollViews.framework in Frameworks */,
+				18EA977423094FED00670B9A /* SwiftScrollViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +128,12 @@
 				1843E5D321B1AF710008AFD6 /* Sources */,
 				1843E5D421B1AF710008AFD6 /* Frameworks */,
 				1843E5D521B1AF710008AFD6 /* Resources */,
-				18D9F99421B3C88800839757 /* Embed Frameworks */,
+				18EA977823094FED00670B9A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				18E60B5C21B7F66B00F54A8E /* PBXTargetDependency */,
+				18EA977723094FED00670B9A /* PBXTargetDependency */,
 			);
 			name = SwiftScrollViewExample;
 			productName = SwiftScrollViewExample;
@@ -215,10 +215,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18E60B5C21B7F66B00F54A8E /* PBXTargetDependency */ = {
+		18EA977723094FED00670B9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftScrollViews;
-			targetProxy = 18E60B5B21B7F66B00F54A8E /* PBXContainerItemProxy */;
+			targetProxy = 18EA977623094FED00670B9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
