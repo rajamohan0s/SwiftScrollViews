@@ -17,13 +17,13 @@ fileprivate var keyboardHeight:CGFloat = 0
 private var kAssociationKeyNextField: UInt8 = 0
 
 //MARK:- TextComponentDelegate
-internal typealias TextComponentDelegate = UITextFieldDelegate & UITextViewDelegate
+ typealias TextComponentDelegate = UITextFieldDelegate & UITextViewDelegate
 
 //MARK:- Protocol of SwiftScrollViewExtension
-internal protocol SwiftScrollViewExtension{}
+ protocol SwiftScrollViewExtension{}
 
 //MARK:- Extension of SwiftScrollViewExtension
-internal extension SwiftScrollViewExtension where Self:UIScrollView{
+ extension SwiftScrollViewExtension where Self:UIScrollView{
     
     private func keyboardSize(from notification:Notification)->CGRect?{
         
@@ -35,7 +35,7 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
    fileprivate var isSwiftScrollView:Bool{ return self is SwiftScrollView || self is SwiftTableView || self is SwiftCollectionView }
    
     //Observe keyboard notifications
-   internal func addNotifications(){
+    func addNotifications(){
         
     self.notification.addObserver(forName:  UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { (notification) in
             self.observeKeyboard(notification, isShow:true)
@@ -73,7 +73,7 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
     }
     
     //Setting UITextFieldDelegate & UITextViewDelegate
-    internal func delegateTextComponents(in rootView:UIView,textComponents:inout [UIView]){
+     func delegateTextComponents(in rootView:UIView,textComponents:inout [UIView]){
         
         rootView.subviews.forEach { (view) in
             
@@ -109,7 +109,7 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
         }
     }
     
-    internal func setDelegate(for textField:UITextField){
+     func setDelegate(for textField:UITextField){
         
         if let scrollView = self as? SwiftScrollView{
             textField.delegate = scrollView
@@ -122,7 +122,7 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
         }
     }
     
-    internal func setDelegate(for textView:UITextView){
+     func setDelegate(for textView:UITextView){
         
         if let scrollView = self as? SwiftScrollView{
             textView.delegate = scrollView
@@ -134,12 +134,12 @@ internal extension SwiftScrollViewExtension where Self:UIScrollView{
         }
     }
     
-    internal func shouldBegin(_ textField: UITextField){
+     func shouldBegin(_ textField: UITextField){
         
         textField.returnKeyType = textField.nextTextComponent == nil ? textField.returnKeyType == .default ? SwiftScrollViews.config.defaultDoneKey : textField.returnKeyType : textField.returnKeyType == .default ? .next : textField.returnKeyType
     }
     
-    internal func shouldReturn(for textField: UITextField,with delegate:SwiftScrollViewsDelegate?){
+     func shouldReturn(for textField: UITextField,with delegate:SwiftScrollViewsDelegate?){
         
         if let nextComponent = textField.nextTextComponent,textField.returnKeyType == .next{
             nextComponent.becomeFirstResponder()
